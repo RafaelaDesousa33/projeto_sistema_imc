@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de IMC</title>
+    <link rel="stylesheet" href="../projeto_sistema_imc/src/style.css">
+
+    <!--font-awesome 5-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <!--boostrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+   
+  <header>
+    <div id="container_sistema_imc">
+
+     <i class="fas fa-heartbeat"></i>
+
+     <h1 id="container_sistema_imc__title">Calculadora de <span class="span_purple">imc</span></h1>
+
+     <p id="container_sistema_imc__paragraph_description">Descubra se o seu peso está dentro da faixa ideal para a sua altura.<br> É rápido, simples e pode ajudar na saúde.</p>
+
+     </div><!--fim container_sistema_imc__dados-->
+
+  </div><!--fim container_sistema_imc-->
+
+  </header>
+
+
+  <main>
+     <div id="container_info" class="container">
+
+        <div id="container_info__dados">
+          <h5 id="container_info__dados__subtitle">Seus dados</h5>
+
+          <p id="container_info__dados__paragraph_info">Preencha as informações abaixo para calcular seu IMC</p>
+
+          <div id="container_info__dados__form">
+            <form>
+
+              <div id="container_info__dados__form__input">
+          
+                <label for="peso_user" class="container_info__dados__form__label">  <i class="fas fa-user"></i> Peso</label>
+                <input name="peso_user" id="input_peso_user" placeholder="Ex:70" type="text" class="form-control">
+              </div><!--fim container_info__dados__form__input-->
+
+              <div id="container_info__dados__form__input">
+                  <label for="peso_user" class="container_info__dados__form__label">  <i class="fas fa-ruler"></i> Altura (m) </label>
+                <input name="peso_user" id="input_altura_user" placeholder="Ex:1.70" type="text" class="form-control">
+              </div><!--fim container_info__dados__form__input-->
+
+            </form>
+
+
+            <button id="btn_calcular_imc"><i class="fas fa-calculator"></i> Calcular IMC</button>
+
+          </div><!--fim container_info__dados__form"-->
+
+        </div><!--fim container_info__dados-->
+
+
+
+        <div id="container_info__result">
+
+          <div id="container_info__result_result_imc">
+
+             <h5 id="container_info__result__subtitle">Seu IMC é</h5>
+
+            <p id="container_info__result_result_imc__paragraph">0.00</p>
+
+            <p id="container_info__result_faixa_peso__paragraph">Faixa de peso <br> - </p>
+
+          </div><!--fim container_info__result_result_imc-->
+
+  
+
+           <div id="container_info__result__info_imc">
+              <h5 id="container_info__result__info_imc__subtitle">O que é IMC?</h5>
+              <p id="container_info__result__info_imc__paragraph">O Índice de Massa corporal (IMC) é um indicador que relaciona o peso e a altura, ajudando a identificar se você esta dentro de um peso saudável.</p>
+           </div><!--fim container_info__result__info_imc-->
+
+        </div><!--fim container_info__result-->
+
+     </div><!--fim container_info-->
+
+
+     <div id="container_classificacoes">
+
+        <div class="box_classificacoes box_classificacoes_abaixo_peso">
+          <i class="fas fa-circle circulo-azul"></i>
+
+          <p class="box_classificacoes__paragraph_numero_peso"><i class="fas fa-less-than"></i> 18,5</p>
+          <p class="box_classificacoes__paragraph_classificacao">Abaixo do peso</p>
+        </div><!--fim box_classificacoes-->
+
+        <div class="box_classificacoes box_classificacoes_peso_ideal">
+          <i class="fas fa-circle circulo-verde"></i>
+
+           <p class="box_classificacoes__paragraph_numero_peso"> 18,5 - 24,9</p>
+          <p class="box_classificacoes__paragraph_classificacao">Peso ideal</p>
+
+        </div><!--fim box_classificacoes-->
+
+        <div class="box_classificacoes box_classificacoes_sobrepeso">
+          <i class="fas fa-circle circulo-laranja"></i>
+
+           <p class="box_classificacoes__paragraph_numero_peso"> 25,0 - 29,9</p>
+          <p class="box_classificacoes__paragraph_classificacao">Sobrepeso</p>
+
+        </div><!--fim box_classificacoes-->
+
+        <div class="box_classificacoes box_classificacoes_obesidade_grau_i">
+         <i class="fas fa-circle circulo-vermelho"></i>
+
+         
+          <p class="box_classificacoes__paragraph_numero_peso">30,0 - 34,9</p>
+          <p class="box_classificacoes__paragraph_classificacao">Obesidade grau I</p>
+
+        </div><!--fim box_classificacoes-->
+
+        <div class="box_classificacoes box_classificacoes_obesidade_grau_ii">
+         <i class="fas fa-circle circulo-roxo"></i>
+
+          <p class="box_classificacoes__paragraph_numero_peso"> 35,0 - 39,9</p>
+          <p class="box_classificacoes__paragraph_classificacao">Obesidade grau II</p>
+        </div><!--fim box_classificacoes-->
+
+        <div class="box_classificacoes box_classificacoes__obesidade_grau_iii">
+
+          <i class="fas fa-circle circulo-roxo_claro"></i>
+
+          <p class="box_classificacoes__paragraph_numero_peso"> <i class="fas fa-greater-than-equal"></i> 40</p>
+          <p class="box_classificacoes__paragraph_classificacao">Obesidade grau III</p>
+    
+        </div><!--fim box_classificacoes-->
+
+     </div><!--fim container_classificacoes-->
+
+
+
+
+
+  </main>
+
+
+  <footer>
+     <div id="container_footer">
+        <p><i class="fas fa-heart icone_coracao"></i> Cuide de você!</p>
+
+     </div><!--fim container_footer-->
+  </footer>
+  
+
+
+
+
+
+    <!--scripts-->
+    <script src="../projeto_sistema_imc/dist/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
