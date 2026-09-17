@@ -2,6 +2,8 @@
 
 Projeto front-end desenvolvido para calcular o Índice de Massa Corporal (IMC) a partir do peso e da altura informados pelo usuário.
 
+<img src="imagem_projeto_imc.png" alt="projeto imagem imc">
+
 **Tecnologias**
 
 HTML
